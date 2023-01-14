@@ -1,0 +1,33 @@
+<br><div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link" href="/addsuppliers">Add Suppliers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Add Hospitals</a>
+      </li>
+    </ul>
+  </div><br>
+  <div class="d-flex justify-content-center">
+  <div class="card card bg shadow-lg p-4 mb-3" style="width: 50%;">
+    <div class="card-body">
+      <div class="col-md-5 offset-md-3 mt-5">
+        <%= simple_form_for :form,id: 'formId1' do |f|%>
+          <%= f.input :hospital_address, :as => :string , :label => 'Hospital Address'%>
+          <br>
+          <%= f.input :hospital_name, :as=> :string , :label => "Hospital Name " %>
+          <br>
+          <%= f.input :phone_number, :as => :integer , :label => 'Phone Number'%>
+          <br>
+          <div class="d-grid">
+            <%= f.submit 'Add', class: 'btn btn-primary', id: 'addHospitalBtn'%>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
