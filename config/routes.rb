@@ -3,4 +3,11 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
    root "pages#index"
+   get "bloodunits"=> "pages#bloodunits"
+   get "suppliers" => "pages#suppliers"
+   get "hospitals" => "pages#hospitals"
+
+   get "addsuppliers" => "admins#addsuppliers"
+   get "addhospitals" => "admins#addhospitals"
+
 end
