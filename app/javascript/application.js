@@ -12,3 +12,6 @@ import "./custom/addSupplier"
 
 import "./custom/addHospital"
 import "./web3/add_hospital"
+
+import "./custom/addDonors"
+import "./web3/add_donors"

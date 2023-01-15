@@ -1,0 +1,35 @@
+<br><div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link active">Add Suppliers</a>
+      </li> 
+  </div><br>
+ <div class="d-flex justify-content-center">
+  <div class="card card bg shadow-lg p-4 mb-3" style="width: 75%;">
+    <div class="card-body">
+      <div class="col-md-5 offset-md-3 mt-5">
+        <%= simple_form_for :form,url: '#', method: :get do |f|%>
+          <%= f.input :blood_id, :as => :integer , :label => 'Blood Id'%>
+          <br>
+          <%= f.input :address, :as=> :string , :label => "Patient Name" %>
+          <br>
+          <%= f.input :gender, :as => :integer , :label => 'Age'%>
+            <br>
+          <%= f.input :gender, :as => :string ,placeholder: 'permanent Address',:label => 'Address'%>
+            <br>
+          <%= f.input :gender, :as => :string , :label => 'Blood Group'%>
+             <br>
+          <%= f.input :gender, :as => :integer , :label => 'Donated Time'%>
+          <br>
+          <div class="d-grid">
+            <%= f.submit 'Add', class: 'btn btn-primary', id: 'shipBloodBtn'%>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+

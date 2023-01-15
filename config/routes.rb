@@ -9,4 +9,11 @@ Rails.application.routes.draw do
 
    get "addsuppliers" => "admins#addsuppliers"
    get "addhospitals" => "admins#addhospitals"
+
+   get "adddonors" => "suppliers#adddonors"
+   get "shipbloods" => "suppliers#shipbloods"
+
+
+
+   get "addpatients" =>"hospitals#addpatients"
 end
