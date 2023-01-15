@@ -7,6 +7,7 @@ class PagesController < ApplicationController
     end 
     
     def suppliers
+        
     end 
 
     def hospitals 
