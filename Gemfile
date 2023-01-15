@@ -76,3 +76,4 @@ end
 
 # simple form 
 gem 'simple_form'
+gem "turbolinks"

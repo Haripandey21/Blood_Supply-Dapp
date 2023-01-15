@@ -13,7 +13,7 @@
   <div class="card card bg shadow-lg p-4 mb-3" style="width: 50%;">
     <div class="card-body">
       <div class="col-md-5 offset-md-3 mt-5">
-        <%= simple_form_for :form,id: 'formId1' do |f|%>
+        <%= simple_form_for :form,url: '#',id: 'supplierFormId' , method: :get do |f|%>
           <%= f.input :supplier_address, :as => :string , :label => 'Supplier Address'%>
           <br>
           <%= f.input :supplier_name, :as=> :string , :label => "Supplier Name " %>

@@ -11,4 +11,7 @@ class PagesController < ApplicationController
 
     def hospitals 
     end 
+
+    def addsuppliers
+    end
 end

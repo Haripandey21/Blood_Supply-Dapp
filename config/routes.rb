@@ -9,5 +9,4 @@ Rails.application.routes.draw do
 
    get "addsuppliers" => "admins#addsuppliers"
    get "addhospitals" => "admins#addhospitals"
-
 end

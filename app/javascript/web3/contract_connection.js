@@ -1,7 +1,11 @@
-import { getaccounts } from "./metamask_connection";
-async function test(){
-let a=await getaccounts();
-
-console.log(a[0]);
+import ABI from "../abi/blood_supply.json" assert { type: "json" }
+import Web3 from 'web3'; 
+let bloodSupplyContract;
+async function contractConnection() {
+    let web3= new Web3(await Web3.givenProvider);
+     bloodSupplyContract = new web3.eth.Contract(
+        ABI,
+        "0xE3681ae0a73aeAdf77B3B76f1Ce52799382EC239"
+    );
 }
-test();
+ export {contractConnection,bloodSupplyContract}

@@ -1,0 +1,577 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "blood_unique_id",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "blood_group",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "blood_volume",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "donated_time",
+        "type": "uint256"
+      }
+    ],
+    "name": "eventBloodAddded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "supplier_address",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "blood_id",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "hospital_address",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "shipping_time",
+        "type": "uint256"
+      }
+    ],
+    "name": "eventBloodShipped",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "hospital_address",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "blood_id",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "used_time",
+        "type": "uint256"
+      }
+    ],
+    "name": "eventBloodUsedByPatient",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "hospital",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "hospital_name",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "phone_number",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "added_time",
+        "type": "uint256"
+      }
+    ],
+    "name": "eventHospitalAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "supplier",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "organization_name",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "phone_number",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "added_time",
+        "type": "uint256"
+      }
+    ],
+    "name": "eventSupplierAdded",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_donor_name",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_age",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "_gender",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_Address",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_blood_group",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_blood_volume",
+        "type": "uint256"
+      }
+    ],
+    "name": "addBlood",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_hospitalAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "_hospital_name",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_phone_number",
+        "type": "uint256"
+      }
+    ],
+    "name": "addHospital",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_supplier_address",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "_organization_name",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_phone_number",
+        "type": "uint256"
+      }
+    ],
+    "name": "addSupplier",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_id",
+        "type": "uint256"
+      }
+    ],
+    "name": "getBloodStatus",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getDataOfBlood",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "blood_unique_id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "blood_group",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "donated_time",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum DataStructure.Status",
+            "name": "current_status",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct DataStructure.bloodDetails[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getDataOfDonors",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "donor_name",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "age",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "gender",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "Address",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "blood_group",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "blood_volume",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "blood_unique_id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "donated_time",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct DataStructure.donor[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getDataOfHospitals",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "hospital_address",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "hospital_name",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "phone_number",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "added_time",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct DataStructure.hospital[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getDataOfPatients",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "patient_name",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "age",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "Address",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "blood_group",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "used_blood_id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "used_time",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct DataStructure.patient[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getDataOfSuppliers",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "supplier_address",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "organization_name",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "phone_number",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "added_time",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct DataStructure.supplier[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_blood_id",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "_patient_name",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_age",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "_address",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_blood_group",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_used_time",
+        "type": "uint256"
+      }
+    ],
+    "name": "giveBloodToPatients",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "hospitals",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_blood_id",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_hospital_address",
+        "type": "address"
+      }
+    ],
+    "name": "shipBloodToHospital",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "suppliers",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
