@@ -2,7 +2,7 @@
   <div class="card-header">
     <ul class="nav nav-tabs card-header-tabs">
       <li class="nav-item">
-        <a class="nav-link active">Add Suppliers</a>
+        <a class="nav-link active">Add Patients</a>
       </li> 
   </div><br>
  <div class="d-flex justify-content-center">
@@ -12,18 +12,18 @@
         <%= simple_form_for :form,url: '#', method: :get do |f|%>
           <%= f.input :blood_id, :as => :integer , :label => 'Blood Id'%>
           <br>
-          <%= f.input :address, :as=> :string , :label => "Patient Name" %>
+          <%= f.input :patient_name, :as=> :string , :label => "Patient Name" %>
           <br>
-          <%= f.input :gender, :as => :integer , :label => 'Age'%>
+          <%= f.input :age, :as => :integer , :label => 'Age'%>
             <br>
-          <%= f.input :gender, :as => :string ,placeholder: 'permanent Address',:label => 'Address'%>
+          <%= f.input :address, :as => :string ,placeholder: 'permanent Address',:label => 'Address'%>
             <br>
-          <%= f.input :gender, :as => :string , :label => 'Blood Group'%>
+          <%= f.input :blood_group, :as => :string , :label => 'Blood Group'%>
              <br>
-          <%= f.input :gender, :as => :integer , :label => 'Donated Time'%>
+              <%= f.input :donated_time, as: :datetime, html5: true, :label => 'Donated Time' %>
           <br>
           <div class="d-grid">
-            <%= f.submit 'Add', class: 'btn btn-primary', id: 'shipBloodBtn'%>
+            <%= f.submit 'Add', class: 'btn btn-primary', id: 'addPatientBtn'%>
           <% end %>
         </div>
       </div>

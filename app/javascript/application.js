@@ -13,8 +13,11 @@ import "./custom/addSupplier"
 import "./custom/addHospital"
 import "./web3/add_hospital"
 
-import "./custom/addDonors"
+import "./custom/addDonor"
 import "./web3/add_donors"
 
 import "./custom/shipBloods"
 import "./web3/ship_bloods"
+
+import "./custom/addPatient"
+import "./web3/add_patient"
