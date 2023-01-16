@@ -15,3 +15,6 @@ import "./web3/add_hospital"
 
 import "./custom/addDonors"
 import "./web3/add_donors"
+
+import "./custom/shipBloods"
+import "./web3/ship_bloods"
