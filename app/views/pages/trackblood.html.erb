@@ -1,0 +1,28 @@
+<div id="carousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="https://health.gov.tt/sites/default/files/inline-images/Blood%20Bank%20logo%202022-04_1.png" alt="First slide">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body ">
+   <div class="d-flex justify-content-center">
+  <div class="card card bg shadow-lg p-7 mb-3" style="width: 75%;">
+    <div class="card-body">
+      <div class="col-md-5 offset-md-4 mt-5">
+        <%= simple_form_for :form,url: '#', method: :get do |f|%>
+            <%= f.input :blood_id, :as=> :integer , :label => "Blood Id " %>
+          <br>
+          <div class="d-grid">
+            <%= f.submit 'Check Status', class: 'btn btn-primary', id: 'checkStatusBtn'%>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+  </div>
+</div>

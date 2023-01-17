@@ -21,3 +21,9 @@ import "./web3/ship_bloods"
 
 import "./custom/addPatient"
 import "./web3/add_patient"
+
+
+import "./gettermethods_web3/getsuppliers"
+
+import "./custom/checkStatus"
+import "./web3/check_status"

@@ -4,5 +4,6 @@ class SuppliersController < ApplicationController
     end 
     def shipbloods
     end 
+ 
 
 end

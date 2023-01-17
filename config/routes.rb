@@ -6,6 +6,7 @@ Rails.application.routes.draw do
    get "bloodunits"=> "pages#bloodunits"
    get "suppliers" => "pages#suppliers"
    get "hospitals" => "pages#hospitals"
+   get "trackblood" => "pages#trackblood"
 
    get "addsuppliers" => "admins#addsuppliers"
    get "addhospitals" => "admins#addhospitals"
@@ -13,7 +14,8 @@ Rails.application.routes.draw do
    get "adddonors" => "suppliers#adddonors"
    get "shipbloods" => "suppliers#shipbloods"
 
-
-
    get "addpatients" =>"hospitals#addpatients"
+
+
+  
 end

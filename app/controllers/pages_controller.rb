@@ -15,4 +15,7 @@ class PagesController < ApplicationController
 
     def addsuppliers
     end
+    
+   def trackblood
+   end 
 end
