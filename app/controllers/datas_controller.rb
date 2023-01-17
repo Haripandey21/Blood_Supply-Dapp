@@ -1,0 +1,3 @@
+class DatasController < ApplicationController
+
+end

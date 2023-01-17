@@ -7,7 +7,8 @@ class PagesController < ApplicationController
     end 
     
     def suppliers
-        
+      suppliers = params[:suppliers]
+
     end 
 
     def hospitals 

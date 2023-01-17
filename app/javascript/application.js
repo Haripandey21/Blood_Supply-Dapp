@@ -23,7 +23,8 @@ import "./custom/addPatient"
 import "./web3/add_patient"
 
 
-import "./gettermethods_web3/getsuppliers"
+import "./gettermethods_web3/get_suppliers"
+import "./custom/getSuppliers"
 
 import "./custom/checkStatus"
 import "./web3/check_status"
