@@ -7,7 +7,7 @@ class PagesController < ApplicationController
     end 
     
     def suppliers
-      suppliers = params[:suppliers]
+      @suppliers=Supplier.all
 
     end 
 

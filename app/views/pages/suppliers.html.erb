@@ -1,1 +1,25 @@
-hello
+<h1 class="text-center mt-2">Authorized Suppliers List</h1>
+<div class="container mt-5">
+  <table class="table table-bordered border-primary">
+    <thead>
+      <tr class="text-center">
+        <th scope="col">Address</th>
+        <th scope="col">Name</th>
+        <th scope="col">Phone Number</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @suppliers.each do |s|%>
+        <tr class="align-middle text-center">
+          <td><%= s.address %></td>
+          <td><%= s.name %></td>
+            <td><%= s.phone_number %></td>
+        </tr>        
+      <% end%>
+    </tbody>
+  </table>
+</div>
+
+
+
+

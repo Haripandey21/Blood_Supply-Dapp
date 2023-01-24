@@ -8,7 +8,7 @@ async function getSuppliersFunc() {
    console.log("Suppliers datas :",suppliers[0]);  
 
    // Make a POST request to a Rails endpoint
-   const response = await fetch('/pages', {
+   const response = await fetch('/suppliers', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
