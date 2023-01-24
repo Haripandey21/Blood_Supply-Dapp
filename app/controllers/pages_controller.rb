@@ -12,6 +12,7 @@ class PagesController < ApplicationController
     end 
 
     def hospitals 
+      @hospitals=Hospital.all
     end 
 
     def addsuppliers

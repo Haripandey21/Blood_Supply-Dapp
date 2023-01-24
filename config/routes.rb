@@ -17,7 +17,9 @@ Rails.application.routes.draw do
    get "addpatients" =>"hospitals#addpatients"
 
    post '/suppliers', to: 'suppliers#getdata'
+   post '/hospitals', to: 'hospitals#getDataOfHospitals'
 
+    
 
 
 

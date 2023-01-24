@@ -1,25 +1,16 @@
-<h1 class="text-center mt-2">Authorized Suppliers List</h1>
-<div class="container mt-5">
-  <table class="table table-bordered border-primary">
-    <thead>
-      <tr class="text-center">
-        <th scope="col">Address</th>
-        <th scope="col">Name</th>
-        <th scope="col">Phone Number</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% @suppliers.each do |s|%>
-        <tr class="align-middle text-center">
-          <td><%= s.address %></td>
-          <td><%= s.name %></td>
-            <td><%= s.phone_number %></td>
-        </tr>        
-      <% end%>
-    </tbody>
-  </table>
+<h1 class="text-center mt-2">Authorized Suppliers List</h1><br>
+<div class="d-flex justify-content-center">
+  <div class="card-deck">
+    <% @suppliers.each do |supplier| %>
+      <div class="card col-18 bg-secondary">
+        <div class="card-body shadow-lg">
+          <h5 class="card-title text-center">Supplier Name : <%= supplier.name %></h5>
+          <p class="card-text">
+            <strong>Address:</strong> <%= supplier.address %><br>
+            <strong>Phone Number:</strong> <%= supplier.phone_number %>
+          </p>
+        </div>
+      </div><br>
+    <% end %>
+  </div>
 </div>
-
-
-
-
