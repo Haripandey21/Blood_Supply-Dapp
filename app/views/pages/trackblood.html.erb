@@ -1,15 +1,12 @@
 <div id="carousel" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="<%= image_path('saveblood.png') %>" alt="First slide">
+      <img class="d-block w-100" src="<%= image_path('saveblood.png') %>">
     </div>
-  </div>
 </div>
-
 <div class="card">
   <div class="card-body ">
    <div class="d-flex justify-content-center">
-  <div class="card card bg shadow-lg p-7 mb-3" style="width: 75%;">
+  <div class="card card bg shadow-lg p-7 mb-5" style="width: 75%;">
     <div class="card-body">
       <div class="col-md-5 offset-md-4 mt-5">
         <%= simple_form_for :form,url: '#', method: :get do |f|%>
@@ -23,6 +20,5 @@
     </div>
   </div>
 </div>
-    
   </div>
 </div>

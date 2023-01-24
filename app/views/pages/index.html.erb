@@ -1,96 +1,58 @@
-    <hr class="featurette-divider">
+  <br> <div class="row">
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="160" ><image xlink:href="<%= image_path('admin.png') %>" width="100%" height="100%" fill="#777"/></svg>
+        <h2 class="fw-normal">Admin</h2>
+        <p>Register Suppliers and Hospitals andn Manage Overals System</p>
+        <p><a class="btn btn-secondary" href="/addsuppliers" id="loginId1">Login &raquo;</a></p>
+      </div>
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="160"  ><image xlink:href="<%= image_path('supplier.jpg') %>" width="100%" height="100%" fill="#777"/></svg>
+        <h2 class="fw-normal">Suppliers</h2>
+        <p>Collect Blood Units from Donors & ship it to the Authorized Hospitals</p>
+        <p><a class="btn btn-secondary" href="/adddonors" id="loginId2">Login &raquo;</a></p>
+      </div>
+        <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="160"  ><image xlink:href="<%= image_path('hospital.png') %>" width="100%" height="100%" fill="#777"/></svg>
+        <h2 class="fw-normal">Hospitals</h2>
+        <p>Collect Blood Samples from the Authorized Suppliers and use it in need for Patients</p>
+        <p><a class="btn btn-secondary" href="/addpatients" id="loginId3" >Login &raquo;</a></p>
+      </div>
+  <hr class="featurette-divider">
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+        <h2 class="featurette-heading fw-normal lh-1">Hey!! Wanna Donate Blood ? <a class="btn btn-secondary" href="/suppliers" >Explore Suppliers to Donate Blood & be a superhero &raquo;&raquo;&raquo;</a></p></h2>
+        <p class="lead">Do you feel you don’t have much to offer? You have the most precious resource of all: the ability to save a life by donating blood! Help share this invaluable gift with someone in need</p>
       </div>
       <div class="col-md-5 order-md-1">
-       <img class="d-block" width="400" height="350"   src="<%= image_path('c3.jpg') %>" alt="First slide">
+       <img class="d-block" width="400" height="350"   src="<%= image_path('c3.jpg') %>">
       </div>
     </div>
 
+    <hr class="featurette-divider">
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+        <h2 class="featurette-heading fw-normal lh-1">Easily Track your Donated Blood </h2><br><a class="btn btn-secondary" href="/trackblood" >Track your Blood Here &raquo;&raquo;&raquo; &raquo;&raquo;&raquo;</a></p>
+        <p class="lead">We ensure you that your donated Blood will give hope to those in need & we respect your Contribution </p>
       </div>
-      <div class="col-md-5">
-            <img class="d-block w-40" width="400" height="400"   src="<%= image_path('c2.jpg') %>" alt="First slide">
+      <div class="col-md-4">
+            <img class="d-block w-40" width="400" height="300"   src="<%= image_path('c2.jpg') %>" >
 
       </div>
     </div>
+    
+    <hr class="featurette-divider">
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good.<a class="btn btn-secondary" href="/bloodunits" >Check All Blood Samples Here &raquo;&raquo;&raquo;</a></p> </h2>
+        <p class="lead">The blood you donate gives someone another chance at life. One day that someone may be a close relative, a friend, a loved one—or even you</p>
       </div>
       <div class="col-md-5 order-md-1">
-       <img class="d-block" width="400" height="350"   src="<%= image_path('c3.jpg') %>" alt="First slide">
+       <img class="d-block" width="400" height="350"   src="<%= image_path('v1.jpg') %>" >
       </div>
     </div>
     
       <hr class="featurette-divider">
   </div>
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<br><br><div class="container-fluid">
-  <div class="row d-flex align-items-center justify-content-center">
-    <div class="card mb-4 shadow-lg" style="width: 22rem;">
-      <img class="card-img-top" src="https://t3.ftcdn.net/jpg/03/48/55/20/360_F_348552050_uSbrANL65DNj21FbaCeswpM33mat1Wll.jpg"  alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Admin</h5>
-          <a href="/addsuppliers" class="btn btn-primary" id="loginId1" >Login</a> 
-        </div>
-    </div>----
-    <div class="card mb-4 shadow-lg" style="width: 20rem;">
-      <img class="card-img-top" src="https://thumbs.dreamstime.com/b/supplier-word-written-wood-block-text-wooden-table-your-desing-concept-139801925.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Suppliers</h5>
-          <a href="/adddonors" class="btn btn-success" id="loginId2" >Login</a>
-        </div>
-    </div>----
-    <div class="card mb-4 shadow-lg" style="width: 22rem;">
-      <img class="card-img-top" src="https://img.freepik.com/free-vector/people-walking-sitting-hospital-building-city-clinic-glass-exterior-flat-vector-illustration-medical-help-emergency-architecture-healthcare-concept_74855-10130.jpg"  alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Hospitals</h5>   
-          <a href="/addpatients" class="btn btn-danger" id="loginId3">Login</a>
-        </div>
-    </div>
-  </div>
-</div>
-
 
 
