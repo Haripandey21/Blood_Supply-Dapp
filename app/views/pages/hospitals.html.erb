@@ -1,16 +1,20 @@
 <h1 class="text-center mt-2">Authorized hospitals List</h1><br>
 <div class="d-flex justify-content-center">
-  <div class="card-deck">
-    <% @hospitals.each do |hospital| %>
-      <div class="card col-18 bg-secondary">
-        <div class="card-body shadow-lg">
-          <h5 class="card-title text-center">Hospital Name : <%= hospital.name %></h5>
-          <p class="card-text">
+  <div class="row">
+     <% @hospitals.each do |hospital| %>
+      <div class="col-12 col-md-6">
+        <div class="card bg-secondary">
+          <div class="card-body shadow-lg">
+            <h5 class="card-title text-center">Hospital Name : <%= hospital.name %></h5>
+           <p class="card-text">
             <strong>Address:</strong> <%= hospital.address %><br>
             <strong>Phone Number:</strong> <%= hospital.phone_number %>
           </p>
-        </div>
-      </div><br>
+          </div>
+        </div><br>
+      </div>
     <% end %>
   </div>
 </div>
+
+

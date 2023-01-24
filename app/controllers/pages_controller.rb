@@ -4,6 +4,7 @@ class PagesController < ApplicationController
     end
 
     def bloodunits
+      @bloodDatas=Bloodunit.all
     end 
     
     def suppliers
