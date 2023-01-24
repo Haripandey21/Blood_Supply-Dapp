@@ -8,7 +8,8 @@
             <h5 class="card-title text-center">Supplier Name : <%= supplier.name %></h5>
             <p class="card-text">
             <strong>Address:</strong> <%= supplier.address %><br>
-            <strong>Phone Number:</strong> <%= supplier.phone_number %>
+            <strong>Phone Number:</strong> <%= supplier.phone_number %><br>
+            <strong>Added Time  :</strong> <%= Time.at(supplier.added_time).strftime("%Y-%m-%d %H:%M:%S") %>
             </p>    
           </div>
         </div><br>

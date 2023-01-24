@@ -8,7 +8,8 @@
             <h5 class="card-title text-center">Hospital Name : <%= hospital.name %></h5>
            <p class="card-text">
             <strong>Address:</strong> <%= hospital.address %><br>
-            <strong>Phone Number:</strong> <%= hospital.phone_number %>
+            <strong>Phone Number:</strong> <%= hospital.phone_number %><br>
+            <strong>Added Time  :</strong> <%= Time.at(hospital.added_time).strftime("%Y-%m-%d %H:%M:%S") %><br>
           </p>
           </div>
         </div><br>
