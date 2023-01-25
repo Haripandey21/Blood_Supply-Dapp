@@ -1,7 +1,10 @@
 class DatasController < ApplicationController
 
-    def getDataOfHospitals
+    def getDataOfBlood
         @bloodDatas = params[:bloodData]
-        Bloodunit.create(blood_unique_id: @bloodDatas[0][0],blood_group: @bloodDatas[0][1],donated_time: @bloodDatas[0][2], status: @bloodDatas[0][3],)
-      end     
+        while @bloodDatas.length >Bloodunit.count
+        Bloodunit.create(blood_unique_id: @bloodDatas[Bloodunit.count +1][0],blood_group: @bloodDatas[Bloodunit.count +1][1],donated_time: @bloodDatas[Bloodunit.count +1][2], status: @bloodDatas[Bloodunit.count +1][3])
+        end    
+    end  
 end
+

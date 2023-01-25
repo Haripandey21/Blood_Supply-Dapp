@@ -18,7 +18,7 @@ Rails.application.routes.draw do
 
    post '/suppliers', to: 'suppliers#getdata'
    post '/hospitals', to: 'hospitals#getDataOfHospitals'
-   post '/datas', to: 'datas#getDataOfHospitals'
+   post '/datas', to: 'datas#getDataOfBlood'
 
 
 

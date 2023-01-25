@@ -1,21 +1,24 @@
 <h1 class="text-center mt-2">Authorized hospitals List</h1><br>
 <div class="d-flex justify-content-center">
   <div class="row">
-     <% @hospitals.each do |hospital| %>
-      <div class="col-12 col-md-6">
+ <% @hospitals.each do |hospital| %>
+      <div class="col-8 col-md-11">
         <div class="card bg-light">
           <div class="card-body shadow-lg">
-            <h5 class="card-title text-center">Hospital Name : <%= hospital.name %></h5>
-           <p class="card-text">
-            <strong>Address:</strong> <%= hospital.address %><br>
-            <strong>Phone Number:</strong> <%= hospital.phone_number %><br>
-            <strong>Added Time  :</strong> <%= Time.at(hospital.added_time).strftime("%Y-%m-%d %H:%M:%S") %><br>
-          </p>
-          </div>
+              <h5 class="card-title text-center">Hospital Name : <%= hospital.name %></h5> 
+             <p class="card-text">
+             <strong>Address : </strong> <%= hospital.address %><br>
+             <strong>Phone Number : </strong> <%= hospital.phone_number %><br>
+             <strong>Added Time  :</strong> <%= Time.at(hospital.added_time).strftime("%Y-%m-%d %H:%M:%S") %>
+             </p>    
+            </div>
         </div><br>
       </div>
     <% end %>
   </div>
 </div>
+
+
+
 
 

@@ -5,7 +5,10 @@ class HospitalsController < ApplicationController
     
     def getDataOfHospitals
         @hospitals = params[:hospitals]
-        Hospital.create(address: @hospitals[0][0],name: @hospitals[0][1], phone_number: @hospitals[0][2],added_time: @hospitals[0][3])
+        while @hospitals.length >Hospital.count
+        Hospital.create(address: @hospitals[Hospital.count +1][0],name: @hospitals[Hospital.count +1][1], phone_number: @hospitals[Hospital.count +1][2],added_time: @hospitals[Hospital.count +1][3])
       end    
+    end
 
 end
+    

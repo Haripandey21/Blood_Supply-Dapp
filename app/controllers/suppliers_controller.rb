@@ -7,7 +7,9 @@ class SuppliersController < ApplicationController
     
     def getdata
         @suppliers = params[:suppliers]
-        Supplier.create(address: @suppliers[0][0],name: @suppliers[0][1], phone_number: @suppliers[0][2],added_time: @suppliers[0][3])   
-      end    
+        while @suppliers.length >Supplier.count
+          Supplier.create(address: @suppliers[Supplier.count +1][0],name: @suppliers[Supplier.count +1][1], phone_number: @suppliers[Supplier.count +1][2],added_time: @suppliers[Supplier.count +1][3])  
+        end 
+    end    
 
 end
