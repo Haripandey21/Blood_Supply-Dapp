@@ -24,6 +24,8 @@ import "./web3/add_patient";
 import "./gettermethods_web3/get_suppliers";
 import "./gettermethods_web3/get_hospitals";
 import "./gettermethods_web3/get_bloodunits";
+import "./gettermethods_web3/get_donorsdata";
+
 
 import "./custom/checkStatus";
 import "./web3/check_status";
