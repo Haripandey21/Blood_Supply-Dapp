@@ -5,7 +5,8 @@ async function addHospitalFunc(_address, _name, _phone_number) {
     await contractConnection();
     let accounts = await getAccounts();
     await bloodSupplyContract.methods.addHospital(_address, _name, _phone_number).send({ from: accounts[0] });
-
+    let event = await bloodSupplyContract.getPastEvents("eventHospitalAdded", {});
+    return event ; 
 }
 export { addHospitalFunc }
 
