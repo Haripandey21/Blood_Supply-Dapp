@@ -14,11 +14,7 @@ document.addEventListener("DOMContentLoaded", async function () {
           let donors = await bloodSupplyContract.methods
             .getDataOfDonors()
             .call({ from: accounts[0] });
-          console.log("donors dataa ", donors);
-          console.log("donors dataay", donors[0][2]);
-         
           appendDataToTable(donors);
-          
         } catch (error) {
           console.error(error);
         }
@@ -27,7 +23,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         const tableBody = document.querySelector("tbody");
         donors.forEach((donor) => {
           const date = new Date(donor[7] * 1000);
-          const dateString = date.toLocaleString(); 
+          const dateString = date.toLocaleString();
           const row = `<tr class="align-middle text-center">
                 <td>${donor[0]}</td>
                 <td>${donor[1]}</td>          

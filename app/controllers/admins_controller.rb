@@ -7,4 +7,6 @@ class AdminsController < ApplicationController
 
     def donorsdata 
     end 
+    def patientsdata
+    end 
 end

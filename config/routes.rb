@@ -21,4 +21,5 @@ Rails.application.routes.draw do
    post '/datas', to: 'datas#getdataofblood' 
 
   get 'donorsdata' => "admins#donorsdata"
+  get 'patientsdata' => "admins#patientsdata"
 end
