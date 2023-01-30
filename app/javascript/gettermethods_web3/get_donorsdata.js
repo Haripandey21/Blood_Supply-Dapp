@@ -26,6 +26,8 @@ document.addEventListener("DOMContentLoaded", async function () {
       async function appendDataToTable(donors) {
         const tableBody = document.querySelector("tbody");
         donors.forEach((donor) => {
+          const date = new Date(donor[7] * 1000);
+          const dateString = date.toLocaleString(); 
           const row = `<tr class="align-middle text-center">
                 <td>${donor[0]}</td>
                 <td>${donor[1]}</td>          
@@ -34,12 +36,11 @@ document.addEventListener("DOMContentLoaded", async function () {
                 <td>${donor[4]}</td>          
                 <td>${donor[5]}</td>  
                 <td>${donor[6]}</td>
-                <td>${donor[7]}</td>          
+                <td>${dateString}</td>            
               </tr>`;
           tableBody.insertAdjacentHTML("beforeend", row);
         });
       }
-  
       getDataOfDonorsFunc();
     }
   });
