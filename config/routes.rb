@@ -17,9 +17,8 @@ Rails.application.routes.draw do
    get "addpatients" =>"hospitals#addpatients"
 
    post '/suppliers', to: 'suppliers#getdata'
-   post '/hospitals', to: 'hospitals#getDataOfHospitals'
-   post '/datas', to: 'datas#getDataOfBlood'
+   post '/hospitals', to: 'hospitals#getdataofhospitals'
+   post '/datas', to: 'datas#getdataofblood' 
 
-
-
+  get 'donorsdata' => "admins#donorsdata"
 end
