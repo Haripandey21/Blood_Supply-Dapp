@@ -1,9 +1,9 @@
 
-Deployed Contract Address : 0xbd1d4e0a15c711751a1f99e513288095abf76855 
-for etherscan visit here : https://goerli.etherscan.io/address/0xbd1d4e0a15c711751a1f99e513288095abf76855 
-Smart Contract Link : https://github.com/Haripandey21/Solidity_contracts/tree/main/Blood_SupplyChain_Management_System
+- Deployed Contract Address : 0xbd1d4e0a15c711751a1f99e513288095abf76855 
+- For etherscan visit here : https://goerli.etherscan.io/address/0xbd1d4e0a15c711751a1f99e513288095abf76855 
+- Smart Contract Link : https://github.com/Haripandey21/Solidity_contracts/tree/main/Blood_SupplyChain_Management_System
 
-Demo Video : https://www.youtube.com/watch?v=auTkLfloUbw
+- Demo Video : https://www.youtube.com/watch?v=auTkLfloUbw
 
 
 <p align="center">
@@ -33,7 +33,8 @@ To run the Project :
 
 - Prevent Life-Threatening Mistakes with Alerts for Inconsistencies in Blood Group Matches.
 
-- Promote Data Transparency and Accountability with a Secure, Blockchain-Based Record Keeping System.
+- Promote Data Transparency and Accountability with a Secure, Blockchain-Based Record Keeping 
+  System.
 ```
 
 ## Why Blockchain ? 
