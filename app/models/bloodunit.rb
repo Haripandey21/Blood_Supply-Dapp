@@ -1,2 +1,0 @@
-class Bloodunit < ApplicationRecord
-end

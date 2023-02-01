@@ -2,8 +2,8 @@ class DatasController < ApplicationController
 
     def getdataofblood
         @bloodDatas = params[:bloodData]
-        while @bloodDatas.length >Bloodunit.count
-        Bloodunit.create(blood_unique_id: @bloodDatas[Bloodunit.count +1][0],blood_group: @bloodDatas[Bloodunit.count +1][1],donated_time: @bloodDatas[Bloodunit.count +1][2], status: @bloodDatas[Bloodunit.count +1][3])
+        while @bloodDatas.length >Bloodsample.count
+            Bloodsample.create(blood_unique_id: @bloodDatas[Bloodsample.count +1][0],blood_group: @bloodDatas[Bloodsample.count +1][1],donated_time: @bloodDatas[Bloodsample.count +1][2])
         end    
     end  
 

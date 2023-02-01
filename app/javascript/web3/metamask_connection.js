@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   }
 });
 
+
 const checkSignature = async (message) => {
   if (localStorage.hasOwnProperty("signature")) {
     return true;

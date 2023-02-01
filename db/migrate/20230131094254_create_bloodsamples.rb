@@ -1,11 +1,9 @@
-class CreateBloodunits < ActiveRecord::Migration[7.0]
+class CreateBloodsamples < ActiveRecord::Migration[7.0]
   def change
-    create_table :bloodunits do |t|
-
+    create_table :bloodsamples do |t|
       t.integer :blood_unique_id
       t.string :blood_group
       t.integer :donated_time
-      t.integer :status
     end
   end
 end

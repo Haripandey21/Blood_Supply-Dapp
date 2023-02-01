@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       const address = String(document.getElementById("form_address").value);
       const eventBloodShipped = await shipBloodFunc(blood_id, address);
       if (eventBloodShipped) {
-        alert("You successfully added the Supplier");
+        alert("You successfully Shipped the Blood to Hospital");
         window.location.href = "/shipbloods";
       }
     });

@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         phone_number
       );
       if (eventHospitalAdded) {
-        alert("You successfully added the Supplier");
+        alert("You successfully added the Hospital");
         window.location.href = "/addhospitals";
       }
     });

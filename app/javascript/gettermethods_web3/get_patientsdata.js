@@ -29,8 +29,8 @@ document.addEventListener("DOMContentLoaded", async function () {
                 <td>${patient[0]}</td>
                 <td>${patient[1]}</td>          
                 <td>${patient[2]}</td>  
-                <td>${patient[3]}</td>
-                <td>${patient[4]}</td>           
+                <td>${patient[4]}</td>
+                <td>${patient[3]}</td>           
                 <td>${dateString}</td>            
               </tr>`;
           tableBody.insertAdjacentHTML("beforeend", row);

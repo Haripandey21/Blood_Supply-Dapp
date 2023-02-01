@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       async function getDataOfDonorsFunc() {
         try {
           await contractConnection();
-          const accounts = await getAccounts();
+          let accounts = await getAccounts();
           let donors = await bloodSupplyContract.methods
             .getDataOfDonors()
             .call({ from: accounts[0] });

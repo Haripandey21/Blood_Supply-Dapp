@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_24_110732) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_31_094254) do
+  create_table "bloodsamples", force: :cascade do |t|
+    t.integer "blood_unique_id"
+    t.string "blood_group"
+    t.integer "donated_time"
+  end
+
   create_table "bloodunits", force: :cascade do |t|
     t.integer "blood_unique_id"
     t.string "blood_group"

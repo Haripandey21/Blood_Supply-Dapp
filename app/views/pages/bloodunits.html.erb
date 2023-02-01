@@ -1,4 +1,4 @@
-<h1 class="text-center mt-2">Donated Blood Units</h1><br>
+<h1 class="text-center mt-2">Collected Blood Units</h1><br>
 
 
 <div class="d-flex justify-content-center">
@@ -11,17 +11,6 @@
             <p class="card-text">
               <strong>Blood Group  :</strong> <%= bloodData.blood_group %><br>
              <strong>Donated Time  :</strong> <%= Time.at(bloodData.donated_time).strftime("%Y-%m-%d %H:%M:%S") %><br>
-              <strong>Current Status  :</strong> 
-              <% case bloodData.status%>
-          <% when 1 %>
-            No record of blood
-          <% when 2 %>
-            Donor donated his blood & yet to be shipped to Hospital
-          <% when 3 %>
-            Blood shipped to Hospital,yet to be used by Patients
-          <% when 4 %>
-            Blood Used by patient
-        <% end %>
             </p>
           </div>
         </div><br>
